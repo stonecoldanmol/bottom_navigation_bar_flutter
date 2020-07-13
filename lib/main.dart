@@ -1,3 +1,7 @@
+import 'package:bottom_navigation_bar/activity/Camera.dart';
+import 'package:bottom_navigation_bar/activity/HomePage.dart';
+import 'package:bottom_navigation_bar/activity/Profile.dart';
+import 'package:bottom_navigation_bar/activity/Search.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,10 +32,14 @@ class _HomeState extends State<Home> {
   int _currentIndex=0;
 
   final tabs=[
-    Center(child: Text('Home')),
+    /*Center(child: Text('Home')),
     Center(child: Text('Search')),
     Center(child: Text('Camera')),
-    Center(child: Text('Profile')),
+    Center(child: Text('Profile')),*/
+    HomePage(),
+    SearchPage(),
+    CameraPage(),
+    ProfilePage(),
   ];
 
   @override
